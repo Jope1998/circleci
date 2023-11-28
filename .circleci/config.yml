@@ -1,14 +1,21 @@
 version: 2.1
-
-
 jobs:
   saluda:
     docker:
       - image: cimg/base:stable
     steps:
       - run: echo hola mundirijillos
-  
+
+jobs:
+  saluda2:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - run: echo hola mundirijillos2
+
+
 workflows:
   hello:
     jobs:
       - saluda
+      - saluda2
