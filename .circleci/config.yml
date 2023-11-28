@@ -11,4 +11,4 @@ jobs:
 workflows:
   hello:
     jobs:
-      -saluda
+      - saluda
